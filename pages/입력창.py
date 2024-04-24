@@ -58,9 +58,3 @@ for uploaded_file in uploaded_files:
     st.write("filename:", uploaded_file.name)
     st.write(data)
 
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-    # bytes_data = uploaded_file.read()
-    data = pd.read_csv(uploaded_file, encoding='euc-kr')
-    st.write("filename:", uploaded_file.name)
-    st.write(data)
